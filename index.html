@@ -53,6 +53,16 @@
         width: 100%
       }
 
+      .contentright {
+        border-left: white 0.1px solid;
+        float: right;
+      }
+
+      .contentleft {
+        border-right: white 0.1px solid;
+        float: left;
+      }
+
       .content {
         color: white;
         margin: 20px;
@@ -61,8 +71,8 @@
       .contentbox {
         display: block;
         width: 100%;
-        border: white 0.1px solid;
-        border-radius: 10px;
+        border-top: white 0.1px solid;
+        border-bottom: white 0.1px solid;
         padding: 10px;
       }
 
@@ -73,6 +83,25 @@
 
       a:hover {
         color: white;
+      }
+
+      .gradient {
+        background: linear-gradient(-90deg, #9600ff, #3333ff);
+      }
+
+      button {
+        border-radius: 10px;
+        color: white;
+        border: black 0px solid;
+        padding: 5px;
+        width: 150px;
+        height: 50px;
+        transition-duration: 0.3s;
+      }
+      
+      button:hover { 
+        width: 200px;
+        height: 75px;;
       }
 
     </style>
@@ -119,24 +148,29 @@
     <h2 class="title">
       The Toolbox for Everything Shortcuts
     </h2>
+    <center>
+      <button type="button" class="gradient" onclick="window.location='ICLOUD LINK'">
+        Add to Shortcuts
+      </button>
+    </center>
     <div class="content">
-      <div class="contentbox" id="archiver">
-        uwu
+      <div class="contentbox contentleft" id="archiver">
+        Archive any webpage to your files to view later!
       </div>
-      <div class="contentbox" id="compiler">
-        uwu
+      <div class="contentbox contentright" id="compiler">
+        Run, edit, and share HTML code through Shortcuts!
       </div>
-      <div class="contentbox" id="utilities">
-        uwu
+      <div class="contentbox contentleft" id="utilities">
+        Utilities for everyday use in Shortcuts!
       </div>
-      <div class="contentbox" id="chat">
-        uwu
+      <div class="contentbox contentright" id="chat">
+        Set up a chat application without using external sources!
       </div>
-      <div class="contentbox" id="photo">
-        uwu
+      <div class="contentbox contentleft" id="photo">
+        Edit and share photos through Shortcuts!
       </div>
-      <div class="contentbox" id="webpage">
-        uwu
+      <div class="contentbox contentright" id="webpage">
+        Run useful shortcuts on webpages!
       </div>
     </div>
   </body>
